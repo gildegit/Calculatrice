@@ -1,0 +1,6 @@
+# Multiplier deux nombres et afficher le résultat
+a 5
+b = 7
+resultat = a * b
+print(resultat)
+
