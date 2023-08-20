@@ -1,0 +1,15 @@
+# Fonction pour effectuer la division
+def division(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Division par zéro n'est pas possible"
+
+# Saisie des nombres par l'utilisateur
+num1 = float(input("Entrez le numérateur : "))
+num2 = float(input("Entrez le dénominateur : "))
+
+# Appel de la fonction de division et affichage du résultat
+result = division(num1, num2)
+print("Le résultat de la division est :", result)
+
