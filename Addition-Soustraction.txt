@@ -1,0 +1,31 @@
+[200~#include <stdio.h>
+
+int main() {
+    int nombre1, nombre2;
+    
+    // Saisie des nombres
+    printf("Entrez le premier nombre : ");
+    scanf("%d", &nombre1);
+    
+    printf("Entrez le deuxième nombre : ");
+    scanf("%d", &nombre2);
+    
+    // Addition et affichage du résultat
+    int resultatAddition = nombre1 + nombre2;
+    printf("Le résultat de l'addition est : %d\n", resultatAddition);
+    
+    // Soustraction et affichage du résultat
+    int resultatSoustraction = nombre1 - nombre2;
+    printf("Le résultat de la soustraction est : %d\n", resultatSoustraction);
+    
+    return 0;
+}
+
+Ce programme commence par inclure la bibliothèque standard <stdio.h> qui est nécessaire pour utiliser les fonctions d'entrée/sortie telles que printf et scanf. Ensuite, il déclare deux variables nombre1 et nombre2 pour stocker les nombres saisis par l'utilisateur. Les nombres sont saisis à l'aide de la fonction scanf.
+
+Le programme effectue ensuite l'addition et la soustraction des deux nombres en utilisant les opérateurs + et -. Les résultats sont stockés dans les variables resultatAddition et resultatSoustraction, respectivement.
+
+Enfin, les résultats sont affichés à l'écran à l'aide de la fonction printf, et le programme se termine en renvoyant 0 pour indiquer une exécution réussie.
+
+N'oubliez pas que ce programme est très simple et ne gère pas les erreurs ou les entrées incorrectes de l'utilisateur. Dans une application réelle, vous devriez envisager d'ajouter des mécanismes de validation et de gestion des erreurs pour améliorer la robustesse du programme.
+
