@@ -1,0 +1,50 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    char operation;
+    double num1, num2;
+
+    cout << "Calculatrice en C++" << endl;
+    cout << "Opérations disponibles : +, -, *, /" << endl;
+
+    cout << "Entrez le premier nombre : ";
+    cin >> num1;
+
+    cout << "Entrez l'opération (+, -, *, /) : ";
+    cin >> operation;
+
+    cout << "Entrez le deuxième nombre : ";
+    cin >> num2;
+
+    double resultat;
+
+    switch (operation) {
+        case '+':
+            resultat = num1 + num2;
+            break;
+        case '-':
+            resultat = num1 - num2;
+            break;
+        case '*':
+            resultat = num1 * num2;
+            break;
+        case '/':
+            if (num2 != 0) {
+                resultat = num1 / num2;
+            } else {
+                cout << "Erreur : division par zéro !" << endl;
+                return 1; // Quitter le programme avec un code d'erreur
+            }
+            break;
+        default:
+            cout << "Opération non valide !" << endl;
+            return 1; // Quitter le programme avec un code d'erreur
+    }
+
+    cout << "Le résultat de " << num1 << " " << operation << " " << num2 << " est : " << resultat << endl;
+
+    return 0;
+}
+
